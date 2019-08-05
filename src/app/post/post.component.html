@@ -1,0 +1,13 @@
+
+<li class="col-xs-12 list-group-item" [ngClass]="{'list-group-item-success' : getBG() === 'green','list-group-item-danger' : getBG() === 'red' }" >
+    
+    <h2>{{ titre }}</h2>
+    <p><strong>{{ contenu }}</strong></p>
+    <p> <i>{{ date | date : 'short' }}</i> </p>
+   <div class="row">
+    <button class="btn btn-success col-xs-4 "(click)="love()">Love it !</button>
+    <p class="col-xs-4" style="text-align: center">number od lovers {{nblove}}</p>
+    <button class="btn btn-danger col-xs-4 " (click)="didnt()"  >Didn't love it !</button>
+    </div>
+</li> 
+
